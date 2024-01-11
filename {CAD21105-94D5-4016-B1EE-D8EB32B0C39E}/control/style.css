@@ -1,0 +1,62 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+#canvas {
+  background: #94fafe;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  height: 480px;
+  width: 512px;
+}
+
+.game {
+  display: inline-block;
+  position: relative;
+}
+
+#buttons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons button {
+  margin: 10px 0;
+  width: 256px;
+}
+
+button {
+  color: black;
+  cursor: pointer;
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 1.5em;
+}
+
+button:hover {
+  background: #f8f8f8;
+}
+
+.game button {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hidden {
+  display: none;
+}

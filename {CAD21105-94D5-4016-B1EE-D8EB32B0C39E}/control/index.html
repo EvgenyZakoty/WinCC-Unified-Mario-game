@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head> 
+	<meta charset='utf-8'>
+	<title>Control 3D object</title>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+	<script src='./jsm/webcc.min.js'></script>
+
+    <script src="bundle.js"></script>
+
+
+
+<body>
+	<div class="container">
+		<div class="game">
+		  <canvas id="canvas" width="512" height="480"></canvas>
+		  <section id="buttons">
+			<button id="play-with-sound">Play with Sound</button>
+			<button id="play-without-sound">Play without Sound</button>
+		  </section>
+		</div>
+	  </div>
+
+	<script type="module">
+		WebCC.start(
+			function (result) {
+				if (result) {
+					console.log('connected successfully');
+				} else {
+					console.log('connection failed');
+				}
+			},
+			{					
+				events: [],
+				properties: {}
+			},
+			[],
+			10000
+		);
+	</script>
+
+</body>
+
+</html>
